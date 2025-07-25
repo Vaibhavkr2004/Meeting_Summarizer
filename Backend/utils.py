@@ -17,8 +17,5 @@ def extract_audio_from_video(video_path):
     return audio_path
 
 def contains_profanity(text):
-    """
-    Checks if the transcript contains profanity.
-    Returns True/False.
-    """
+   
     return profanity.contains_profanity(text)
