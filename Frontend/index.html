@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meeting Minutes Summarizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Meeting Minutes Summarizer</h1>
+
+    <!-- File Upload Form -->
+    <form id="upload-form" enctype="multipart/form-data">
+      <input
+        type="file"
+        id="file-input"
+        name="file"
+        accept=".mp3,.wav,.mp4,.mkv,.mov"
+        required
+      />
+      <button type="submit">Upload & Summarize</button>
+    </form>
+
+    <!-- Loading Indicator -->
+    <div id="loading" style="display: none;">⏳ Processing, please wait...</div>
+
+    <!-- Output Sections -->
+    <div id="output" style="display: none;">
+      <h2>Transcript</h2>
+      <pre id="transcript"></pre>
+
+      <h2>Summary</h2>
+      <p id="summary"></p>
+
+      <h2>Action Items</h2>
+      <ul id="action-items"></ul>
+
+      <h2>Profanity Check</h2>
+      <p id="profanity"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
